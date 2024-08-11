@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive page</title>
+    <style>
+        
+        .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+     main h1, main h2, main h3 {
+      color: #333;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+        
+    @media (max-width: 767px) {
+      .container {
+        padding: 20px;
+      }
+    }
+        
+  
+           </style>
+            
+</head>
+<body>
+    
+    <header>
+        <p class="logo"><span>LO</span><strong>GO</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li id="contact-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class=".content">
+        <div class="container">
+            <h1>About the Artist</h1>
+            
+            <img src="https://i.pinimg.com/originals/2f/9d/3c/2f9d3c579b52d657577b6dc405d5e32e.jpg" alt="Artist Portrait">
+            
+            <p>John Smith is a acclaimed painter whose work has been celebrated for its bold use of color, expressive brushwork, and exploration of themes related to the human experience. With a career spanning over two decades, he has developed a unique artistic style that combines traditional techniques with contemporary sensibilities.</p>
+            
+            <h2>Early Life and Education</h2>
+            
+            <img src="https://i.pinimg.com/originals/4a/a5/62/4aa562b147c1ca963c54a366009a3490.png" alt="John in College Studio">
+            
+            <p>Born in 1985 in a small Midwestern town, John showed a keen interest and talent in the visual arts from a young age. After graduating from high school, he attended the State University, where he earned his Bachelor of Fine Arts degree, specializing in painting and drawing.</p>
+            <h2>Professional Career</h2>
+    
+            <img src="https://i.pinimg.com/originals/04/e2/1b/04e21b3fcb7a0958575cdd60e83b7b12.jpg" alt="John Painting in Studio">
+            
+            <p>Following his studies, John moved to the city and began working as a freelance artist, taking on commissions and exhibiting his work in local galleries. Over the years, his artistic style evolved, and he developed a unique approach that combined traditional techniques with contemporary themes and materials.</p>
+            
+            <h2>Artistic Style and Themes</h2>
+            
+            <img src="https://i.pinimg.com/originals/5a/63/00/5a630012e00aa456d579f6f520b02628.jpg" alt="Landscape Painting">
+            
+            <p>John's artwork is characterized by its bold use of color, expressive brushwork, and exploration of themes related to the human experience, such as identity, emotion, and the natural world. He often works in series, delving deeper into a particular subject or concept over time.</p>
+            
+            <h2>Awards and Recognition</h2>
+            <p>John's dedication and talent have been recognized through numerous awards and accolades. His work has been featured in prestigious art publications and has been exhibited in galleries and museums across the country. He continues to push the boundaries of his craft, always seeking new ways to engage and inspire his audience.</p>
+    
+            <p>If you would like to learn more about John's artwork or inquire about commissions, please don't hesitate to <a href="https://example.com/contact">contact us</a>.</p>
+          </div>      
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-column logo-column">
+          <p><span>LO</span> <strong>GO</strong></p>
+        </div>
+        <div class="footer-column quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+              
+            </ul>
+        </div>
+        <div class="footer-column contact-info">
+            <h3>Contact Us</h3>
+            <ul>
+            <li><a href="mailto:info@123.com">info@123.com</a></li>
+            <li> <a href="tel:+1234567890">+1234567890</a></li>
+          </ul>
+        </div>
+        <div class="footer-column social-links">
+            <h3>Follow Us</h3>
+            <ul>
+           <li><a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook" class="social-logo"> Facebook
+            </a></li> 
+            <li><a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <img src="https://logodix.com/logo/14514.png" alt="Twitter" class="social-logo"> Twitter
+            </a></li> 
+            <li><a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <img src="https://clipart.info/images/ccovers/1516920567instagram-png-logo-transparent.png" alt="Instagram" class="social-logo"> Instagram
+            </a></li> 
+          </ul>
+          </div>
+        </div>
+        </footer>
+      <script>
+        document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function redirectToHomePage() {
+      window.location.href = 'index.html'; // Replace with the actual home page URL
+    }
+    
+    </script>
+    
+
+
+
+</body>
+</html>
